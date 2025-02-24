@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add New Post</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="container py-5">
+    <h1 class="text-center mb-4">Add a New Blog Post</h1>
+    
+    <form action="/add-post" method="POST" class="card p-4 shadow">
+        <div class="mb-3">
+            <label class="form-label">Title</label>
+            <input type="text" name="title" placeholder="Enter title" required class="form-control">
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">Content</label>
+            <textarea name="content" placeholder="Enter content" required class="form-control"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add Post</button>
+    </form>
+
+    <div class="text-center mt-4">
+        <a href="/" class="btn btn-secondary">Back to Home</a>
+    </div>
+</body>
+</html>
